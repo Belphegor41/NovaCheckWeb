@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NovaCheck - Backoffice</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>NovaCheck - Backoffice</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="index.html">Checklists</a></li>
+            <li><a href="admin.html">Backoffice</a></li>
+        </ul>
+    </nav>
+    <main>
+        <h2>Gérer les sections et les tâches</h2>
+        <form id="sectionForm">
+            <label for="sectionName">Nom de la section :</label>
+            <input type="text" id="sectionName" required>
+            <button type="submit">Ajouter une section</button>
+        </form>
+        <div id="sections"></div>
+    </main>
+    <footer>
+        <small>NovaCheck est créé par la société NovaSoft, appartenant au groupe Berry&amp;Co.</small>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,30 +1,38 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>NovaCheck Web</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NovaCheck Web - Les Sources de Cheverny</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <h1>NovaCheck Web - Les Sources de Cheverny</h1>
-    </header>
-    <nav>
-        <ul>
-            <li><a href="index.html">Checklists</a></li>
-            <li><a href="admin.html">Backoffice</a></li>
-        </ul>
-    </nav>
-    <main id="content">
-        <h2>Checklists quotidiennes</h2>
-        <p>Cocher chaque point de contrôle et générez ensuite le rapport PDF.</p>
-        <div id="checklists"></div>
-        <button id="generateReport">Générer le rapport quotidien</button>
-    </main>
-    <footer>
-        <small>NovaCheck est créé par la société NovaSoft, appartenant au groupe Berry&amp;Co.</small>
-    </footer>
-    <script src="script.js"></script>
+  <header>
+    <h1>NovaCheck Web - Les Sources de Cheverny</h1>
+  </header>
+  <nav>
+    <ul>
+      <li><a href="index.html">Checklists</a></li>
+      <li><a href="admin.html">Backoffice</a></li>
+      <li><a href="scan.html">Scan QR</a></li>
+    </ul>
+  </nav>
+  <main id="content">
+    <h2>Checklists quotidiennes</h2>
+    <p>Pour chaque point de contrôle, sélectionnez OK/KO, ajoutez un commentaire et éventuellement une photo. Complétez ensuite votre signature en bas et générez le rapport PDF.</p>
+    <div id="checklists"></div>
+    <div id="signature-container">
+      <h3>Signature</h3>
+      <canvas id="signaturePad" width="300" height="150"></canvas>
+      <button id="clearSignature">Effacer la signature</button>
+    </div>
+    <button id="generateReport">Générer le rapport quotidien</button>
+  </main>
+  <footer>
+    <small>NovaCheck est créé par la société NovaSoft, appartenant au groupe Berry&Co.</small>
+  </footer>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+  <script src="https://html2canvas.hertzen.com/dist/html2canvas.min.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>

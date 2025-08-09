@@ -2,10 +2,29 @@
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>NovaCheck Web</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>NovaCheck Web</h1>
-    <p>Cette version web sera bientôt disponible.</p>
+    <header>
+        <h1>NovaCheck Web - Les Sources de Cheverny</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="index.html">Checklists</a></li>
+            <li><a href="admin.html">Backoffice</a></li>
+        </ul>
+    </nav>
+    <main id="content">
+        <h2>Checklists quotidiennes</h2>
+        <p>Cocher chaque point de contrôle et générez ensuite le rapport PDF.</p>
+        <div id="checklists"></div>
+        <button id="generateReport">Générer le rapport quotidien</button>
+    </main>
+    <footer>
+        <small>NovaCheck est créé par la société NovaSoft, appartenant au groupe Berry&amp;Co.</small>
+    </footer>
+    <script src="script.js"></script>
 </body>
 </html>
